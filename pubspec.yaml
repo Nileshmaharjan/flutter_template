@@ -1,0 +1,119 @@
+name: sample
+description: A new Flutter application.
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 0.0.1
+
+environment:
+  sdk: ">=2.6.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.0
+  flutter_svg: ^0.19.0
+  intl: ^0.16.1
+  equatable: ^1.2.5
+
+  # BLOC support
+  bloc: ^6.0.3
+  flutter_bloc: ^6.0.5
+
+  # DI / service locator
+  get_it: ^5.0.1
+
+  # Routing
+  fluro: ^1.6.3
+
+  # HTTP library
+  dio: ^3.0.10
+
+  # connectivity
+  connectivity: ^0.4.9+3
+
+  # Miscellaneous libs
+  flutter_secure_storage: ^3.3.4
+  device_info: ^0.4.2+8
+  url_launcher: ^5.4.10
+  enum_to_string: ^1.0.13
+  path_provider: ^1.6.18
+  simple_animations: ^2.2.2
+  package_info: ^0.4.3
+  flutter_screenutil: ^3.1.1
+
+  # Miscellaneous widgets
+  fluttertoast: ^7.1.1
+  auto_size_text: ^2.1.0
+  keyboard_visibility: ^0.5.6
+
+  # Additional icons
+  feather_icons_flutter: ^4.7.4
+  flutter_launcher_icons: ^0.8.1 # A package for generating the launcher icons
+
+dev_dependencies:
+  test: ^1.9.4
+  flutter_test:
+    sdk: flutter
+  flutter_driver:
+    sdk: flutter
+  mockito: ^4.1.1
+  pedantic: ^1.8.0+1
+  bloc_test: ^7.0.4
+  clock: ^1.0.1
+  flutter_native_splash: ^0.1.9 # A package for generating the splash screen
+  change_app_package_name: ^0.1.2
+  flutter_launcher_name: ^0.0.1
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/launcher-icon.png"
+
+flutter_native_splash:
+  image: assets/icon/launcher-icon.png
+  color: '#FFFFFF'
+  android_disable_fullscreen: true
+
+flutter_launcher_name:
+  name: "Sample"
+
+
+flutter:
+  uses-material-design: true
+  assets:
+
+    - assets/images/main/
+    - assets/icon/
+
+  fonts:
+    - family: AvenirNextLTPro
+      fonts:
+        - asset: assets/fonts/AvenirNextRegular.ttf
+          weight: 400
+        - asset: assets/fonts/AvenirNextLTPro-Bold.ttf
+          weight: 700
+    - family: Kredit
+      fonts:
+        - asset: assets/fonts/kredit.ttf
+    - family: ProximaNova
+      fonts:
+        - asset: assets/fonts/proxima-nova-regular.otf
+# Requires flutter_launcher_icons
+# Update/regenerate icons with `flutter packages pub run flutter_launcher_icons:main`
+# Rasterise SVG to PNG here: https://cloudconvert.com/svg-to-png (choose to rasterise at 3000x3000)
+# https://stackoverflow.com/questions/56088670/in-dart-is-it-possible-to-pass-an-argument-in-a-singleton
+# Generate loading screens here: https://apetools.webprofusion.com/#/tools/imagegorilla
